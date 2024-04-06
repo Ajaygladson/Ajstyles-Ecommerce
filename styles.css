@@ -1,0 +1,417 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+   font-family: 'Poppins',sans-serif;
+   padding: 0%;
+   scroll-behavior: smooth;
+   -webkit-tap-highlight-color: transparent;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+/* Nav-bar-------------------------------------------------------------- */
+.nav-bar{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 10px 25px rgb(148, 140, 140) ;
+}
+
+.nav-bar-links{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-bar-links a{
+  text-decoration: none;
+  color:rgb(31, 23, 23);
+}
+
+.nav-bar-links a:hover{
+  cursor: pointer;
+  text-decoration:underline;
+  text-underline-offset: 10px;
+  text-decoration-color: gray;
+}
+
+/* Mobile-NavBar-------------------------------------------------------- */
+.hamburger-icon{
+    display: none;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+#side-bar-container{
+  width: 200px;
+  height: 40%;
+  position: fixed;
+  right:-80%;
+  top:0;
+  background-color: gray;
+  backdrop-filter: blur(10px);
+  border-bottom-left-radius: 40px;
+  list-style: none;
+  transition: 1s;
+}
+
+.xicon{
+  cursor: pointer;
+  position: fixed;
+  right:0;
+  margin-right: 22px;
+  top:17px;
+  color: white;
+}
+
+.side-bar-links{
+ margin-top: 90px;
+}
+
+.side-bar-link{
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.side-bar-link a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Header------------------------------------------------------------------- */
+
+.container-1{
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.text-part1{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+ 
+ 
+
+.text-part1 button{
+  width: 100px;
+  padding: 10px;
+  border-radius: 30px;
+  border-style: ridge;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.text-part1 button:hover{
+  background-color: rgb(36, 26, 26);
+}
+
+
+.container-2{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.experience-1 h1{
+  text-align: center;
+}
+
+.experience-2 p{
+  text-align: center;
+}
+
+.container-3{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  
+}
+
+.note-1,.note-2,.note-3{
+  background-color: gray;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+
+#container-4head{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+.container-4{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.container-4 button{
+  position: absolute;
+  background-color: white;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  margin-top: 300px;
+  margin-left: -200px;
+  border-style: ridge;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s;
+}
+
+.container-4 button:hover{
+  background-color: rgb(231, 221, 221);
+}
+
+.container-4 button:active{
+  background-color: white;
+}
+
+.container-5{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding: 2px;
+}
+
+
+.container-5 h1,p{
+  text-align: center;
+}
+
+.container-5 p{
+  margin-bottom: 20px;
+}
+
+
+#signup-space{
+  width: 500px;
+  padding: 10px;
+  display: block;
+  margin: auto;
+  border-color: black;
+  border-style: ridge;
+  border-radius: 10px;
+}
+
+
+#subscribe-btn{
+  width: 100px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  border-style: ridge;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+
+#subscribe-btn:hover{
+  background-color: rgb(53, 40, 40);
+}
+
+#subscribe-btn:active{
+  background-color:black;
+}
+
+
+footer{
+  color: white;
+  background-color: rgb(69, 67, 67);
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  gap:3px;
+  padding: 60px;
+  padding-top: 100px;
+}
+
+
+footer p{
+  text-align: left;
+}
+
+
+.social-container{
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+
+.closure{
+  cursor: pointer;
+}
+
+
+/* Collections tab----------------------------- */
+
+.product-container{
+    margin-top: 40px;
+}
+
+
+.search-container{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  border: solid gray;
+  border-radius: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 15px;
+}
+
+#searchvalue{
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: large;
+  background-color: transparent;
+}
+
+
+#clothes-bag{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#clothes-bag button{
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin-top: 300px;
+    margin-left: -200px;
+    border-style: ridge;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+
+
+
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.active{
+   transform: translateY(0px);
+   opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mdia-queries------------------------------------------------------- */
+
+@media (max-width:700px)
+{
+  .hamburger-icon{
+      display: block;
+  }
+  .nav-bar-links{
+    display: none;
+  }
+ 
+  .container-1{
+    margin-top:50px;
+    flex-direction: column;
+  }
+
+  .cloth-1{
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .container-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -10px;
+    padding: 2px;
+  }
+
+  .container-3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .container-4{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #signup-space{
+    width: 200px;
+  }
+
+  .search-container{
+    padding: 5px;
+  }
+
+}
+
+@media (min-width:701px)
+{
+  .text-part1{
+    padding-right: 30px;
+    margin-top: 130px;
+  }
+
+  .container-4 div{
+    padding: 20px;
+  }
+  
+}
